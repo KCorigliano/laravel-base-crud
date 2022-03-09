@@ -17,3 +17,5 @@ Route::get('/', "ComicsController@index")->name("home");
 
 Route::get('/show', "ComicsController@show")->name("home");
 
+Route::resource("homepage", "ComicsController");
+
