@@ -1,6 +1,6 @@
 <?php
 
-use App\ComicModel;
+use App\Comic;
 use Illuminate\Database\Seeder;
 
 class ComicsTableSeeder extends Seeder
@@ -124,7 +124,7 @@ class ComicsTableSeeder extends Seeder
     ];
 
     foreach ($comics as $comic) {
-        $newComic = new ComicModel();
+        $newComic = new Comic();
 
         $newComic->title = $comic['title'];
         $newComic->description = $comic['description'];
