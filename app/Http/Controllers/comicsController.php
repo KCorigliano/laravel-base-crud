@@ -15,7 +15,7 @@ class ComicsController extends Controller
     public function index()
     {
         $data = Comic::all();
-        return view('homepage', compact($data));
+        return view('homepage', compact("data"));
     }
 
     /**
@@ -25,7 +25,7 @@ class ComicsController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -47,8 +47,10 @@ class ComicsController extends Controller
      */
     public function show($id)
     {
-        $data = Comic::all();
-        return view('homepage', compact($data));
+        $comic = Comic::findOrFail($id);
+        dd($comic);
+
+        return view('show', compact("comic"));
     }
 
     /**
