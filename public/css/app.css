@@ -29,3 +29,10 @@
      object-fit: cover;
 }
 
+.main .list-link {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+

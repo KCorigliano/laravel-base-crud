@@ -16,13 +16,13 @@
             <div class="container-fluid">
                 <div class="d-flex justify-content-center align-items-center pt-4">
                     <div class="header-links me-2 p-2">
-                        <a class="" href="/homepage">Home</a>
+                        <a class="" href="{{route('comics.index')}}">Home</a>
                     </div>
                     <div class="header-links me-2 p-2">
-                        <a class="" href="/comics">Comics</a>
+                        <a class="" href="/list">Comics list</a>
                     </div>
                     <div class="header-links p-2">
-                        <a href="show">Create</a>
+                        <a href="{{route('comics.create')}}">Create</a>
                     </div>
                 </div>
             </div>
