@@ -9,6 +9,12 @@
                         <a class="list-link" href="{{ route('comics.show', $comic->id) }}">
                             {{$comic->title}}
                         </a>
+                        <form action="{{route('comics.destroy', $comic->id)}}"
+                            method="POST">
+                            @csrf
+                            @method('delete')
+                            <input type="submit" value="Elimina">
+                        </form>
                     </p>
                 @endforeach
             </div>
