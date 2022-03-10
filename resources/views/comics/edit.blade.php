@@ -5,7 +5,7 @@
 
 
 <div class="container-fluid main">
-  <form action="{{ route('comics.update' ['id' => $comic-id]) }}" method="post">
+  <form action="{{ route('comics.update', $comic->id) }}" method="post">
     @csrf
 
     @method('PUT')
@@ -16,7 +16,7 @@
     </div>
     <div>
       <label for="title">description</label>
-      <input type="text" name="description" id="description" value="{{$comic->description}}">
+      <input type="textarea" name="description" id="description" value="{{$comic->description}}">
     </div>
     <div>
       <label for="title">thumb</label>

@@ -10,6 +10,6 @@
   <p><strong>series</strong>: {{ $comic->series }}</p>
   <p><strong>sale_date</strong>: {{ $comic->sale_date }}</p>
   <p><strong>type</strong>: {{ $comic->type }}</p>
-  {{-- <a href="{{route('comics.edit')}}">modifica</a> --}}
+  <a href="{{route('comics.edit', $comic->id)}}">modifica</a>
 </div>
 @endsection
