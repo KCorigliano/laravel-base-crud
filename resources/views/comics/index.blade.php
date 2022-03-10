@@ -6,7 +6,7 @@
             <div class="row p-4">
                 @foreach ($data as $comic)
                     <div class="card col-2 m-2">
-                        <a href="{{ route('homepage.show', $comic->id) }}">
+                        <a href="{{ route('comics.show', $comic->id) }}">
                             <img src="{{ $comic["thumb"] }}" alt="">
                         </a>
                     </div>

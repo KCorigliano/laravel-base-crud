@@ -16,7 +16,10 @@
             <div class="container-fluid">
                 <div class="d-flex justify-content-center align-items-center pt-4">
                     <div class="header-links me-2 p-2">
-                        <a class="" href="/">Home</a>
+                        <a class="" href="/homepage">Home</a>
+                    </div>
+                    <div class="header-links me-2 p-2">
+                        <a class="" href="/comics">Comics</a>
                     </div>
                     <div class="header-links p-2">
                         <a href="show">Create</a>
